@@ -62,9 +62,15 @@
                     <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">&#60;/AboutMe&#62;</li></a>
                     <a href="#skills"aria-label="skills menu button">
                     <li class="skills" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="500">&#60;/Skills&#62;</li></a>
-                    <a href="#projects"aria-label="projects menu button">
-                    <li class="projects" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="700">&#60;/Projects&#62;</li></a>
-                    
+                    <a href="#experience" tabindex="0" aria-label="Experience menu button">
+                      <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">&#60;/Experience&#62;</li>
+                    </a>
+                    <a href="#achievements" tabindex="0" aria-label="Achievements menu button">
+                        <li id="achievements-mobile-tab" class="mobile-navbar-tabs-li achievements" onclick="hidemenubyli()">&#60;/Achievements&#62;</li>
+                    </a>
+                    <a href="#projects" tabindex="0" aria-label="Projects menu button">
+                        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">&#60;/Projects&#62;</li>
+                    </a>
                 </ul>
 
                
@@ -74,36 +80,43 @@
     <!-- header ends here -->
 
     <main>
-       
-        <!-- hamburger -->
+            <!-- hamburger -->
         <div class="hamburger" id="hamburger" data-aos="fade">
-            <div class="hamburgerbase">
-            <button id="hamburger-button" onclick="hamburgerMenu()"  tabindex="0" aria-label="Menu Button">
-                <span class="burger-bar" id="burger-bar1"></span>
-                <span class="burger-bar" id="burger-bar2"></span>
-                <span class="burger-bar" id="burger-bar3"></span></button>
-            </div>
+          <div class="hamburgerbase">
+              <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+                  <span class="burger-bar" id="burger-bar1"></span>
+                  <span class="burger-bar" id="burger-bar2"></span>
+                  <span class="burger-bar" id="burger-bar3"></span>
+              </button>
+          </div>
         </div>
         <!-- hamburger -->
         <div class="mobiletogglemenu" id="mobiletogglemenu">
-            <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-                <a href="#home" tabindex="0" aria-label="Home menu button">
-                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">&#60;/Home&#62;</li></a>
-                <a href="#about" tabindex="0" aria-label="about menu button">
-                <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about"onclick="hidemenubyli()">&#60;/AboutMe&#62;</li></a>
-                <a href="#skills" tabindex="0" aria-label="skills menu button">
-                <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills"onclick="hidemenubyli()">&#60;/Skills&#62;</li></a>
-                <a href="#projects" tabindex="0" aria-label="projects menu button">
-                <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">&#60;/Projects&#62;</li></a>
-                
-            </ul>
+          <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+              <a href="#home" tabindex="0" aria-label="Home menu button">
+                  <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">&#60;/Home&#62;</li>
+              </a>
+              <a href="#about" tabindex="0" aria-label="About menu button">
+                  <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">&#60;/AboutMe&#62;</li>
+              </a>
+              <a href="#skills" tabindex="0" aria-label="Skills menu button">
+                  <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">&#60;/Skills&#62;</li>
+              </a>
+              <a href="#experience" tabindex="0" aria-label="Experience menu button">
+                  <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">&#60;/Experience&#62;</li>
+              </a>
+              <a href="#achievements" tabindex="0" aria-label="Achievements menu button">
+                  <li id="achievements-mobile-tab" class="mobile-navbar-tabs-li achievements" onclick="hidemenubyli()">&#60;/Achievements&#62;</li>
+              </a>
+              <a href="#projects" tabindex="0" aria-label="Projects menu button">
+                  <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">&#60;/Projects&#62;</li>
+              </a>
+          </ul>
         </div>
+
         <!-- mobile toggle menu ends -->
         <div class="fakenavbar"></div>
         <section class="landing-page-container" id="home">
-           
-              
-              
               
             <div class="text-content">
                 <article id="hello-friend"data-aos="fade-up"data-aos-delay="0"><p class="jello">N</p><p class="jello">a</p><p class="jello">m</p><p class="jello">a</p><p class="jello">s</p><p class="jello">t</p><p class="jello">e</p><p class="jello">(</p><p class="jello">)</p><p class="jello">;</p>&nbsp;<p class="jello">I</p><p class="jello">'</p><p class="jello">m</p></article>
@@ -238,6 +251,8 @@
                
             </div>
         </section>
+        <!-- skills section ends -->
+
 
         <!-- Experience Section -->
         <section class="experience-section-container" id="experience" data-aos="fade-up">
@@ -295,8 +310,49 @@
       </section>
 
 
+      <section class="achievements-section-container" id="achievements" data-aos="fade-up">
+        <div class="achievements-section">
+            <div class="section-heading">
+                <article class="section-heading-article" tabindex="0" aria-label="Achievements heading">&#60;/Achievements&#62;</article>
+                <p class="sectionHeadingP"></p>
+            </div>
+            
+            <div class="achievements-entries">
 
-        <!-- skills section ends -->
+              <!-- Achievement 1 -->
+              <div class="achievement-entry" data-aos="fade-up" data-aos-delay="200">
+                <h3>Published Research Paper</h3>
+                <p class="duration">2025</p>
+                <ul>
+                    <li>Published paper on "Resume Ranker: AI-powered Recruitment System"</li>
+                    <li>Presented at International Conference on Advanced Computing</li>
+                    <li>
+                      <a href="https://www.researchgate.net/publication/389828978_ResuMatcher_An_Intelligent_Resume_Ranking_System" class="cta" style="text-decoration: none;">
+                        <span>View Paper</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Achievement 2 -->
+                <div class="achievement-entry" data-aos="fade-up">
+                    <h3>3rd Rank in Diploma</h3>
+                    <p class="duration">2020</p>
+                    <ul>
+                        <li>Secured 3rd position in Computer Engineering Diploma program</li>
+                        <li>Maintained consistent academic performance across 6 semesters</li>
+                    </ul>
+                </div>
+    
+                
+            </div>
+        </div>
+    </section>
+
         <section class="projects-section-container" id="projects">
             <div class="projects-section-div">
                 <div class="section-heading" data-aos="fade-up"><article class="section-heading-article" tabindex="0"aria-label="My projects starts from here">&#60;/Projects&#62;</article><p class="sectionHeadingP"></p></div>
@@ -307,7 +363,7 @@
 <!-- ---------------------- -->
                 <a href="#" target="_blank" data-aos="fade-up"><div class="project-box project-box2" id="project-box2">
                     <div class="info-div">
-                        <img src="src/svg/aquaregia-favicon.svg" alt="" class="faviconforProjectAquaregia">
+                        <img src="src/svg/resume-logo.svg" alt="" class="faviconforProjectAquaregia">
                         <article class="ProjectHeading">Resume Ranker</article>
                         <p class="ProjectDescription">Smart, time-saving resume screening for recruiters and job seekers.</p>
                         <button class="cta">
@@ -318,7 +374,7 @@
                             </svg>
                           </button>
                     </div>
-                    <div class="image-div"><img src="src/webp/Aquaregia-project.webp" alt=""></div>
+                    <div class="image-div"><img src="src/jpg/Resume.jpg" alt=""></div>
             </div></a>
              <!-- ---------------------- -->
         <a href="#" target="_blank" data-aos="fade-up"><div class="project-box project-box4" id="project-box4">
@@ -334,13 +390,13 @@
                     </svg>
                   </button>
             </div>
-            <div class="image-div"><img src="src/webp/QRgeneratorProject.webp" alt=""></div>
+            <div class="image-div"><img src="src/png/UserDashboard.png" alt=""></div>
     </div></a>
 
                <!-- ---------------------- -->
                <a href="#" target="_blank" data-aos="fade-up"><div class="project-box project-box5" id="project-box5">
                 <div class="info-div">
-                    <img src="src/ico/foodmenufavicon.ico" alt="" class="faviconforProject">
+                    <img src="src/svg/food-picky-logo.svg" alt="" class="faviconforProject">
                     <article class="ProjectHeading">FoodPicky – All Restaurants, One Platform</article>
                       <p class="ProjectDescription">Explore menus, order food, and support your favorite spots — all in one place.</p>
                     <button class="cta">
@@ -351,7 +407,7 @@
                         </svg>
                       </button>
                 </div>
-                <div class="image-div"><img src="src/webp/FoodMenuProject.webp" alt=""></div>
+                <div class="image-div"><img src="src/png/FoodMenuProject.png" alt=""></div>
           </div></a>
 
             <!-- ---------------------- -->
