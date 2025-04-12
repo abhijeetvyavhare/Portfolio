@@ -1624,6 +1624,10 @@ transition-duration: 1s;
     padding-left: 80px;
 }
   }
+
+  
+
+
   
   @media screen and (max-width:768px) {
     html {
@@ -1800,6 +1804,126 @@ transition-duration: 1s;
     }
   }
   
+
+
+/* Experience Section Styles */
+.experience-section-container {
+    margin: 150px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-entries {
+    width: 100%;
+    display: grid;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.experience-entry {
+    background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    border: 1px solid var(--tech-stack-box-border-color);
+    border-radius: 20px;
+    padding: 3rem;
+    transition: all 0.3s ease;
+}
+
+.experience-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--color-shadowDark);
+}
+
+.experience-entry h3 {
+    font-size: 2.4rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.company {
+    font-size: 1.8rem;
+    color: var(--color-light-blue);
+    margin-bottom: 0.5rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.duration {
+    font-size: 1.4rem;
+    color: var(--color-ddd-color);
+    margin-bottom: 2rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.experience-entry ul {
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.experience-entry li {
+    font-size: 1.6rem;
+    color: var(--color-ddd-color);
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.experience-entry li::before {
+    content: "▹";
+    position: absolute;
+    left: -2rem;
+    color: var(--color-light-purple);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .experience-section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experience-entry {
+        padding: 2rem;
+    }
+    
+    .experience-entry h3 {
+        font-size: 2rem;
+    }
+    
+    .company {
+        font-size: 1.6rem;
+    }
+    
+    .duration {
+        font-size: 1.2rem;
+    }
+    
+    .experience-entry li {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .experience-section-container {
+        margin: 100px 0;
+    }
+    
+    .experience-entry {
+        padding: 1.5rem;
+    }
+}
   /* responsive code above */
   
   
